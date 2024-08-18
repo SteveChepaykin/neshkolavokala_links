@@ -32,9 +32,13 @@ class SpecialElevatedButton extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: bg,
                 foregroundColor: fg,
-                // minimumSize: Size.fromHeight(height),
                 padding: const EdgeInsets.symmetric(horizontal: 0),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius), side: BorderSide(color: bg == Colors.black ? Colors.white : bg)),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(radius),
+                  side: BorderSide(
+                    color: bg == Colors.black ? Colors.white : bg,
+                  ),
+                ),
               ),
               child: Container(
                 constraints: BoxConstraints(
@@ -42,21 +46,22 @@ class SpecialElevatedButton extends StatelessWidget {
                   maxHeight: height,
                   maxWidth: 700,
                 ),
-                child: Expanded(
-                  child: Center(
-                    child: child,
-                  ),
+                child: Center(
+                  child: child,
                 ),
               ),
             )
           : ElevatedButton(
               onPressed: enabled ? action : null,
               style: ElevatedButton.styleFrom(
-                // minimumSize: Size.fromHeight(height),
                 padding: const EdgeInsets.symmetric(horizontal: 0),
                 foregroundColor: fg,
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(radius), side: BorderSide(color: bg == Colors.black || gradient != null ? Colors.white : bg)),
+                  borderRadius: BorderRadius.circular(radius),
+                  side: const BorderSide(
+                    color: Colors.transparent,
+                  ),
+                ),
               ),
               child: Ink(
                 decoration: BoxDecoration(

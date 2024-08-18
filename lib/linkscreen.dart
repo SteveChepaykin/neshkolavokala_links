@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:neshkola_links/button.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -13,7 +11,7 @@ class LinkScreen extends StatelessWidget {
       "link": "https://www.youtube.com/@NeShkola-u2h",
     },
     "Instagram": {
-      "color": Colors.pinkAccent,
+      "color": const Color(0xFF000000),
       "link": "https://www.instagram.com/neshkolavokala_istra?igsh=NDI1cWcxYXVrcWNo&utm_source=qr",
       "gradient": const LinearGradient(
         begin: Alignment.topLeft,
@@ -38,7 +36,7 @@ class LinkScreen extends StatelessWidget {
       "link": "https://chat.whatsapp.com/HUntV8QqtZiAMS4OMPoWtM",
     },
     "TikTok": {
-      "color": Colors.black,
+      "color": const Color(0xFF000000),
       "link": "https://www.tiktok.com/@neshkolavokala_istra?is_from_webapp=1&sender_device=pc",
     },
   };
