@@ -12,6 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'neshkolavokala_istra',
+      theme: ThemeData.from(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF000000),
+        ),
+      ),
       debugShowCheckedModeBanner: false,
       home: LinkScreen(),
     );
