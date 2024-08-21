@@ -33,7 +33,7 @@ class LinkScreen extends StatelessWidget {
     },
     "WhatsApp": {
       "color": const Color(0xFF24D364),
-      "link": "https://chat.whatsapp.com/HUntV8QqtZiAMS4OMPoWtM",
+      "link": "https://wa.me/79252986649",
     },
     "TikTok": {
       "color": const Color(0xFF000000),
