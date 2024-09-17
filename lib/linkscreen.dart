@@ -35,10 +35,6 @@ class LinkScreen extends StatelessWidget {
       "color": const Color(0xFF24D364),
       "link": "https://wa.me/79252986649",
     },
-    "TikTok": {
-      "color": const Color(0xFF000000),
-      "link": "https://www.tiktok.com/@neshkolavokala_istra?is_from_webapp=1&sender_device=pc",
-    },
   };
 
   @override
